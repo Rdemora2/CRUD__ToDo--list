@@ -1,5 +1,5 @@
 <template>
-  <div class="container mt-2">
+    <div class="container mt-2" v-if="tasks.length != 0">
       <div v-for="(task, index) in tasks" :key="index">
         <b-card :title="task.subject" class="mb-2" id="card1">
           <b-card-text>{{ task.description }}</b-card-text>
@@ -19,7 +19,14 @@
           <b-button variant="outline-danger" class="mr-2" @click="confirmRemoveTask"> Excluir </b-button>
         </div> 
       </b-modal>
-  </div>
+    </div>
+    <div class="container mt-2 alinhar" v-else>
+      <b-card class="mb-2" id="card1">
+        <b-card-text>Pô, vc ainda não criou nenhuma task....</b-card-text>
+        <b-card-text>Bora criar uma?</b-card-text>
+        <b-button variant="outline-danger" class="mr-2" to="/form">É só clicar aqui!</b-button>
+      </b-card>
+    </div>
 </template>
     
     <script>
@@ -68,5 +75,12 @@
       color: rgb(219, 209, 209);
       box-shadow: -1px 1px 11px 1px rgba(0,0,0,0.36);
       -webkit-box-shadow: -1px 1px 11px 1px rgba(0,0,0,0.36);
+      }
+      .alinhar{
+        height: calc(100vh - 64px) !important;
+        width: 100vh !important;
+        display: flex !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
       }
     </style>
