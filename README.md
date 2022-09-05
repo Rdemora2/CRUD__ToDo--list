@@ -2,7 +2,7 @@
 
 
 ## Preview Link
-https://to-do-list-rdemora2.vercel.app/
+https://crud-to-do-list-rdemora2.vercel.app/
 
 ## Home preview
 ![image](https://user-images.githubusercontent.com/103211332/187738997-5fad281b-2d97-402d-a403-bc553dc49fcf.png)
