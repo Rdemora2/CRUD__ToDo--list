@@ -1,5 +1,7 @@
 # Vue ToDo List
 
+## About
+Project of a CRUD ToDo list made in vue.js
 
 ## Preview Link
 https://crud-to-do-list-rdemora2.vercel.app/
